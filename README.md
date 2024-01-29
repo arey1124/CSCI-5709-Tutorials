@@ -10,6 +10,11 @@ Check out our Tutorial 2 application deployed on Netlify:
 Explore the code for the individual Tutorial 2 on my GitLab repository:
 [https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial2](https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial2)
 
+## Individual Assignment Repository
+
+Explore the code for the individual Assignments on my GitLab repository:
+[https://git.cs.dal.ca/dugar/csci-5709-assignments](https://git.cs.dal.ca/dugar/csci-5709-assignments)
+
 ## Group Project Repository
 
 For our collaborative group project, visit our main repository on GitLab:
