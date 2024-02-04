@@ -2,9 +2,13 @@ import './Registration.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useEffect, useState } from 'react';
+import {useNavigate} from "react-router-dom";
 
-function App() {
+function Registration() {
+  let navigate = useNavigate();
   const [values, setValues] = useState({});
+  const [isValidated, setIsValidated] = useState(false);
+
   const [errors, setErrors] = useState({
         "first-name" : false,
         "last-name" : false,
@@ -39,6 +43,14 @@ function App() {
     validateForm();
   }, [values]);
 
+  useEffect(()=>{
+    if(!Object.values(errors).some((value) => value === true) && Object.keys(values).length === 5) {
+      setIsValidated(true);
+    } else {
+      setIsValidated(false);
+    }
+  }, [values, errors]);
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
@@ -50,10 +62,12 @@ function App() {
         "password" : true,
         "confirm-password" : true,
       });
+    } else {
+      validateForm();
     }
 
-    if (Object.values(errors).some((value) => value === true)) {
-      console.log("Error");
+    if (isValidated) {
+      navigate("/profile");
     }
   };
 
@@ -95,7 +109,7 @@ function App() {
             <Form.Label>Email address</Form.Label>
             <Form.Control 
               name="email"
-              type="email" 
+              type="text" 
               placeholder="Enter email" 
               onChange={updateFormValues}
               isInvalid={errors["email"]}/>
@@ -139,4 +153,4 @@ function App() {
   );
 }
 
-export default App;
+export default Registration;
