@@ -36,7 +36,7 @@ function Registration() {
     setValues({
       ...values, 
       [event.target.name]: event.target.value,
-    });
+    }, () => {validateForm()});
   }
 
   useEffect(()=>{
@@ -54,14 +54,14 @@ function Registration() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    if(Object.keys(values).length === 0) {
-      setErrors({...errors,
-        "first-name" : true,
-        "last-name" : true,
-        "email" : true,
-        "password" : true,
-        "confirm-password" : true,
-      });
+    if(Object.keys(values).length !== 5) {
+      var newErrors = {};
+      for(var input of ["first-name", "last-name", "email", "password", "confirm-password"]) {
+        if (!values.hasOwnProperty(input)) {
+          newErrors[input] = true;
+        }
+      }
+      setErrors({...errors, ...newErrors});
     } else {
       validateForm();
     }
@@ -78,8 +78,9 @@ function Registration() {
       </header>
 
       <div className="registration-form-div">
+        <h1 className="form-header">Register</h1>
         <Form onSubmit={handleFormSubmit}>
-          <Form.Group className="mb-3" controlId="first-name">
+          <Form.Group className="mb-3 col-md-6" controlId="first-name">
             <Form.Label>First Name</Form.Label>
             <Form.Control
               name="first-name"
@@ -92,7 +93,7 @@ function Registration() {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="last-name">
+          <Form.Group className="mb-3 col-md-6" controlId="last-name">
             <Form.Label>Last Name</Form.Label>
             <Form.Control 
               name="last-name"
@@ -105,7 +106,7 @@ function Registration() {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="email">
+          <Form.Group className="mb-3 col-md-6" controlId="email">
             <Form.Label>Email address</Form.Label>
             <Form.Control 
               name="email"
@@ -118,7 +119,7 @@ function Registration() {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="password">
+          <Form.Group className="mb-3 col-md-6" controlId="password">
             <Form.Label>Password</Form.Label>
             <Form.Control 
               name="password"
@@ -131,7 +132,7 @@ function Registration() {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="confirm-password">
+          <Form.Group className="mb-3 col-md-6" controlId="confirm-password">
             <Form.Label>Confirm Password</Form.Label>
             <Form.Control 
               name="confirm-password"
@@ -144,7 +145,7 @@ function Registration() {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="col-md-6">
             Register
           </Button>
         </Form>

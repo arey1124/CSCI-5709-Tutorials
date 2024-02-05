@@ -2,4 +2,59 @@
   align-self: center;
   width: 50%;
   margin: auto;
+  padding: 20px;
+  text-align: -webkit-center;
+}
+
+form {
+
+  label {
+    float: left;
+  }
+
+  .invalid-feedback {
+    text-align: left;
+  }
+
+  .form-control {
+    border-color: #CA6B26;
+    background: #FED89F;
+  }
+
+  .form-control:focus {
+    border-color: #CA6B26;
+    background: #FED89F;
+    outline: 0 none;
+    box-shadow: none;
+  }
+
+  .form-control:-webkit-autofill,
+  .form-control:-webkit-autofill:hover, 
+  .form-control:-webkit-autofill:focus, 
+  .form-control:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 30px #FED89F inset !important;
+  }
+}
+
+body {
+  background-color: #FED89F;
+}
+
+.btn-primary {
+  background: #CA6B26;
+  border-color: #CA6B26;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #a64d13;
+  border-color: #a64d13;
+  color: #FFFFFF;
+}
+
+.form-header {
+  color: #CA6B26;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
