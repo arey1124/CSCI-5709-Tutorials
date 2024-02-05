@@ -1,4 +1,5 @@
 import './Profile.css';
+import profilelogo from '../assets/images/profile.png';
 
 function Profile() {
 
@@ -8,7 +9,11 @@ function Profile() {
         <header className="App-header">
         </header>
         <div className="profile-details-div">
-            <image src="/images/profile.png" />
+            <img src={profilelogo} alt="Profile" className="profile-image" />
+            <div className="profile-details">
+                <h1 className="profile-name">Arihant Dugar</h1>
+                <p className="profile-email">arihant.dugar@dal.ca</p>
+            </div>
         </div>
     </div>
   );
