@@ -41,6 +41,7 @@ function Registration() {
 
   useEffect(()=>{
     validateForm();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [values]);
 
   useEffect(()=>{
