@@ -21,7 +21,7 @@ function Registration() {
   const validateForm = () => {
     for(var field in values) {
       if(field === "first-name" || field === "last-name") {
-        setErrors({...errors, [field]: !(/[A-Za-z]+$/.test(String(values[field])))});
+        setErrors({...errors, [field]: !(/^[A-Za-z]+$/.test(String(values[field])))});
       } else if(field === "email") {
         setErrors({...errors, [field]: !(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(values[field])))});
       } else if (field === "password") {
