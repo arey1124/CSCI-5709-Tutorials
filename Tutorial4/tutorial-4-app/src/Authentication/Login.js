@@ -39,7 +39,6 @@ function Login() {
     <>
       <Container className="login-div">
         <h1 className="form-title">Sign In</h1>
-        <div id="signInMessage" className="text-center"></div>
 
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group controlId="email">

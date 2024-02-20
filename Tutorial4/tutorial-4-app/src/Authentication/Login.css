@@ -35,6 +35,8 @@ body {
 
 .form-title {
     color: #1447FC;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn-submit {
