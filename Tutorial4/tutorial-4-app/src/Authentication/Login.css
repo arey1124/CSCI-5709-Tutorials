@@ -42,3 +42,8 @@ body {
     margin-left: 0;
     margin-top: 10px;
 }
+
+.error-text {
+    color: #dc3545;
+    text-align: center;
+}

@@ -75,6 +75,11 @@ function Login() {
               </InputGroup>
             </Form.Group>
             <Button type="submit" variant="primary" className="btn-submit">SIGN IN</Button>
+            {error && 
+              <div>
+                <span class="error-text">Invalid credentials. Please enter a valid username and password.</span>
+              </div>
+            }
         </Form>
       </Container>
     </>
