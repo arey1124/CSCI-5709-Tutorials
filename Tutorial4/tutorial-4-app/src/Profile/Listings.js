@@ -29,7 +29,6 @@ function Listings() {
     }, []);
 
     const handleClick = (userId) => {
-        // Redirect to URL based on user ID
         navigate(`/profile/details/${userId}`);
     };
 
