@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Form, Button, Container, Row, Col, InputGroup } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Form, Button, Container, InputGroup } from 'react-bootstrap';
 import { Envelope, Lock } from 'react-bootstrap-icons';
 import "./Login.css";
 import {useNavigate} from "react-router-dom";
