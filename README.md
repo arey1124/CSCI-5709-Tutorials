@@ -20,6 +20,16 @@ Check out our Tutorial 3 application deployed on Netlify:
 Explore the code for the individual Tutorial 2 on my GitLab repository:
 [https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial3](https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial3)
 
+## Tutorial 4 Application
+
+Check out our Tutorial 4 application deployed on Netlify:
+[https://main--polite-stroopwafel-835231.netlify.app/](https://main--polite-stroopwafel-835231.netlify.app/)
+
+## Individual Tutorial 4 Repository
+
+Explore the code for the individual Tutorial 4 on my GitLab repository:
+[https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial4](https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial4)
+
 ## Individual Assignment Repository
 
 Explore the code for the individual Assignments on my GitLab repository:
