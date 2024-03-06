@@ -5,7 +5,7 @@
 Check out our Tutorial 5 application deployed on Netlify:
 
 
-## Individual Tutorial 4 Repository
+## Individual Tutorial 5 Repository
 
 Explore the code for the individual Tutorial 5 on my GitLab repository:
 [https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial5](https://git.cs.dal.ca/dugar/csci-5709-tutorials/-/tree/main/Tutorial5)
