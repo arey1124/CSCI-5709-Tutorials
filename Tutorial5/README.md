@@ -2,7 +2,8 @@
 
 ## Tutorial 5 Application
 
-Check out our Tutorial 5 application deployed on Netlify:
+Check out our Tutorial 5 application deployed on Render:
+[https://csci-5709-tutorials-a99k.onrender.com](https://csci-5709-tutorials-a99k.onrender.com)
 
 
 ## Individual Tutorial 5 Repository
@@ -26,4 +27,6 @@ Explore the code for the individual Tutorial 5 on my GitLab repository:
 * [1]   “Express - Node.js web application framework,” Expressjs.com. [Online]. Available: https://expressjs.com/. [Accessed: 06-Mar-2024].
 * [2]	“Npm: Uuid,” npm. [Online]. Available: https://www.npmjs.com/package/uuid. [Accessed: 06-Mar-2024].
 * [3]   L. M. Surhone, M. T. Tennoe, and S. F. Henssonow, “Node.js,” 2010.
+* [4]   “Cloud application hosting for developers,” Render.com. [Online]. Available: https://render.com/. [Accessed: 11-Mar-2024].
+
 
